@@ -1,0 +1,90 @@
+/* Global Styles 
+-------------------------- */
+/* base CSS to add to a project */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  color: #243119;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+img {
+  width: 300px;
+}
+h1 {
+  font-size: 100px;
+  line-height: 1;
+}
+h2 {
+  font-size: 45px;
+}
+h1,
+h2 {
+  font-family: "Caveat", cursive;
+  font-weight: 400;
+  margin: 0;
+}
+.content-wrap {
+  width: 900px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+/* Profile 
+-------------------------- */
+header {
+  background-color: #334195;
+  color: #aaacb0;
+  text-align: center;
+}
+.work-experience {
+  background: #9684a1;
+}
+/* Projects 
+-------------------------- */
+.projects {
+  background: #bfedc1;
+}
+.project-item {
+  overflow: hidden; /* clearing the parent element */
+  border-bottom: 1px dashed; /* seperating projects */
+  padding: 25px 0; /* gives space between projects and border */
+}
+.project-item img {
+  float: left;
+  margin-right: 20px; /* this shoule give space between image and text */
+}
+.project-item h3 {
+  margin-bottom: 0;
+}
+/* Education 
+-------------------------- */
+.education {
+  background: #aaacb0;
+}
+/* Contact Info  
+-------------------------- */
+footer {
+  background: #334195;
+  color: #aaacb0;
+  text-align: center;
+}
+.contact-list {
+  list-style-type: none;
+  padding: 0; /* removes default space */
+  display: flex;
+  justify-content: center;
+}
+/* helps with accessibility by making click area bigger */
+.contact-list a {
+  padding: 15px;
+  display: inline-block;
+}
