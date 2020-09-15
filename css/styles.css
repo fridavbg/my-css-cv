@@ -9,6 +9,7 @@ html {
 *:after {
   box-sizing: inherit;
 }
+
 body {
   color: #243119;
   margin: 0;
@@ -19,10 +20,14 @@ body {
 }
 img {
   width: 300px;
+  margin-top: 15px;
+  border-radius: 15px;
+  box-shadow: 1em 0 1em, -1em 0 1em grey;
 }
 h1 {
   font-size: 100px;
   line-height: 1;
+  margin: 10px;
 }
 h2 {
   font-size: 45px;
@@ -34,8 +39,8 @@ h2 {
   margin: 0;
 }
 .content-wrap {
-  width: 900px;
-  margin: 0 auto;
+  width: 800px;
+  margin: 0 auto; /* top-bottom & left & right */
   padding: 60px 0;
 }
 /* Profile 
@@ -48,6 +53,11 @@ header {
 .work-experience {
   background: #9684a1;
 }
+.job-item {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 20px;
+}
 /* Projects 
 -------------------------- */
 .projects {
@@ -59,7 +69,7 @@ header {
   padding: 25px 0; /* gives space between projects and border */
 }
 .project-item img {
-  float: left;
+  float: left; /* make sure the text floats left of text */
   margin-right: 20px; /* this shoule give space between image and text */
 }
 .project-item h3 {
