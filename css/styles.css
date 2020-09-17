@@ -11,7 +11,6 @@ html {
 }
 
 body {
-  color: #243119;
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
@@ -23,6 +22,12 @@ img {
   margin-top: 15px;
   border-radius: 15px;
   box-shadow: 1em 0 1em, -1em 0 1em grey;
+}
+a {
+  color: #bfedc1;
+}
+a:hover {
+  text-decoration: none;
 }
 h1 {
   font-size: 100px;
@@ -38,11 +43,23 @@ h2 {
   font-weight: 400;
   margin: 0;
 }
+h3 {
+  font-style: italic;
+  font-weight: 900;
+}
+.divider > section {
+  border-bottom: 1px dashed;
+  padding: 25px 0;
+}
+.divider > section:last-of-type {
+  border-bottom: none;
+}
 .content-wrap {
   width: 800px;
   margin: 0 auto; /* top-bottom & left & right */
   padding: 60px 0;
 }
+
 /* Profile 
 -------------------------- */
 header {
@@ -51,22 +68,45 @@ header {
   text-align: center;
 }
 .work-experience {
-  background: #9684a1;
+  background: url(../images/IMG_1327.jpg);
+  background-size: cover;
+  background-position: bottom left;
+}
+.work-experience h3 {
+  font-size: 25px;
+}
+.work-experience p {
+  line-height: 200%;
+  width: 80%;
+  background: rgb(170, 172, 176, 30%);
+  border-radius: 25px;
+  padding: 20px;
+  box-shadow: 0.5em 0 0.5em, -1em 0 0.5em grey;
 }
 .job-item {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 2fr 3fr;
   column-gap: 20px;
 }
 /* Projects 
 -------------------------- */
 .projects {
   background: #bfedc1;
+  color: #243119;
+}
+
+.projects .btn {
+  color: #bfedc1;
+  background: #9684a1;
+  padding: 8px;
+  border-radius: 4px;
+  box-shadow: 2em 0 3em, -1em 0 2em grey;
+}
+.projects .btn:hover {
+  background: rgb(150, 132, 161, 80%);
 }
 .project-item {
   overflow: hidden; /* clearing the parent element */
-  border-bottom: 1px dashed; /* seperating projects */
-  padding: 25px 0; /* gives space between projects and border */
 }
 .project-item img {
   float: left; /* make sure the text floats left of text */
@@ -78,7 +118,7 @@ header {
 /* Education 
 -------------------------- */
 .education {
-  background: #aaacb0;
+  background: #9684a1;
 }
 /* Contact Info  
 -------------------------- */
@@ -97,4 +137,12 @@ footer {
 .contact-list a {
   padding: 15px;
   display: inline-block;
+}
+/* Responsive styles  */
+@media screen and (min-width: 6000px) {
+  .content-wrap p {
+    max-width: 90%;
+    margin: auto;
+    text-align: center;
+  }
 }
