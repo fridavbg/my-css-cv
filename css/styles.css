@@ -68,7 +68,7 @@ header {
   text-align: center;
 }
 .work-experience {
-  background: url(../images/IMG_1327.jpg);
+  background: url(../images/workexpbkgjpg.jpg);
   background-size: cover;
   background-position: bottom left;
 }
@@ -78,7 +78,7 @@ header {
 .work-experience p {
   line-height: 200%;
   width: 80%;
-  background: rgb(170, 172, 176, 30%);
+  background: rgb(170, 172, 176, 60%);
   border-radius: 25px;
   padding: 20px;
   box-shadow: 0.5em 0 0.5em, -1em 0 0.5em grey;
