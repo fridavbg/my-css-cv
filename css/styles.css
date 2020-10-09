@@ -139,10 +139,18 @@ footer {
   display: inline-block;
 }
 /* Responsive styles  */
-@media screen and (min-width: 6000px) {
+@media only screen and (max-width: 800px) {
   .content-wrap p {
-    max-width: 90%;
+    max-width: 60%;
     margin: auto;
     text-align: center;
+  }
+  .work-experience p {
+    font-size: small;
+    padding: 5px;
+    margin: 5px;
+  }
+  .job-item {
+    display: inline-block;
   }
 }
