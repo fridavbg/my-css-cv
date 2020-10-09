@@ -98,19 +98,19 @@ header {
 .projects .btn {
   color: #bfedc1;
   background: #9684a1;
-  padding: 8px;
+  padding: 10px;
   border-radius: 4px;
-  box-shadow: 2em 0 3em, -1em 0 2em grey;
 }
 .projects .btn:hover {
   background: rgb(150, 132, 161, 80%);
 }
 .project-item {
   overflow: hidden; /* clearing the parent element */
+  padding: 30px;
 }
 .project-item img {
   float: left; /* make sure the text floats left of text */
-  margin-right: 20px; /* this shoule give space between image and text */
+  margin: 20px; /* this shoule give space between image and text */
 }
 .project-item h3 {
   margin-bottom: 0;
