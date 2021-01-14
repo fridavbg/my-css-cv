@@ -1,0 +1,156 @@
+/* Global Styles 
+-------------------------- */
+/* base CSS to add to a project */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+img {
+  width: 300px;
+  margin-top: 15px;
+  border-radius: 15px;
+  box-shadow: 1em 0 1em, -1em 0 1em grey;
+}
+a {
+  color: #bfedc1;
+}
+a:hover {
+  text-decoration: none;
+}
+h1 {
+  font-size: 100px;
+  line-height: 1;
+  margin: 10px;
+}
+h2 {
+  font-size: 45px;
+}
+h1,
+h2 {
+  font-family: "Caveat", cursive;
+  font-weight: 400;
+  margin: 0;
+}
+h3 {
+  font-style: italic;
+  font-weight: 900;
+}
+.divider > section {
+  border-bottom: 1px dashed;
+  padding: 25px 0;
+}
+.divider > section:last-of-type {
+  border-bottom: none;
+}
+.content-wrap {
+  width: 800px;
+  margin: 0 auto; /* top-bottom & left & right */
+  padding: 60px 0;
+}
+
+/* Profile 
+-------------------------- */
+header {
+  background-color: #334195;
+  color: #aaacb0;
+  text-align: center;
+}
+.work-experience {
+  background: url(../images/workexpbkgjpg.jpg);
+  background-size: cover;
+  background-position: bottom left;
+}
+.work-experience h3 {
+  font-size: 25px;
+}
+.work-experience p {
+  line-height: 200%;
+  width: 80%;
+  background: rgb(170, 172, 176, 60%);
+  border-radius: 25px;
+  padding: 20px;
+  box-shadow: 0.5em 0 0.5em, -1em 0 0.5em grey;
+}
+.job-item {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  column-gap: 20px;
+}
+/* Projects 
+-------------------------- */
+.projects {
+  background: #bfedc1;
+  color: #243119;
+}
+
+.projects .btn {
+  color: #bfedc1;
+  background: #9684a1;
+  padding: 10px;
+  border-radius: 4px;
+}
+.projects .btn:hover {
+  background: rgb(150, 132, 161, 80%);
+}
+.project-item {
+  overflow: hidden; /* clearing the parent element */
+  padding: 30px;
+}
+.project-item img {
+  float: left; /* make sure the text floats left of text */
+  margin: 20px; /* this shoule give space between image and text */
+}
+.project-item h3 {
+  margin-bottom: 0;
+}
+/* Education 
+-------------------------- */
+.education {
+  background: #9684a1;
+}
+/* Contact Info  
+-------------------------- */
+footer {
+  background: #334195;
+  color: #aaacb0;
+  text-align: center;
+}
+.contact-list {
+  list-style-type: none;
+  padding: 0; /* removes default space */
+  display: flex;
+  justify-content: center;
+}
+/* helps with accessibility by making click area bigger */
+.contact-list a {
+  padding: 15px;
+  display: inline-block;
+}
+/* Responsive styles  */
+@media only screen and (max-width: 800px) {
+  .content-wrap p {
+    max-width: 60%;
+    margin: auto;
+    text-align: center;
+  }
+  .work-experience p {
+    font-size: small;
+    padding: 5px;
+    margin: 5px;
+  }
+  .job-item {
+    display: inline-block;
+  }
+}
