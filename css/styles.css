@@ -151,8 +151,8 @@ footer {
 }
 
 /* Responsive styles  */
-@media only screen and (max-width: 800px) {
-	.content-wrap p {
+@media only screen and (max-width: 1200px) {
+	.content-wrap {
 		max-width: 60%;
 		margin: auto;
 		text-align: center;
@@ -165,4 +165,25 @@ footer {
 	.job-item {
 		display: inline-block;
 	}
+
+@media only screen and (max-width: 600px){
+	/*Big smartphones [426px -> 600px]*/
+		.content-wrap {
+		max-width: 60%;
+		margin: auto;
+		text-align: center;
+		}
+		h1, h2 {
+			font-size: 30px;
+		}
+	.work-experience p {
+		font-size: x-small;
+		padding: 12px;
+		margin: 10px;
+		}
+	.job-item {
+		display: inline-block;
+		}
+	}
+
 }
